@@ -25,7 +25,7 @@
 
         <section class="appointments">
             <div class="appointments__by-date">
-                <h2>Hoje</h2>
+                <h2 class="appointments__by-date__title">Hoje</h2>
                 <ul>
                     <li>
                         <div class="appointments__card">
@@ -44,12 +44,87 @@
                             <div class="card__description">
                                 <p class="card__appointment-hour">14:00 - 15:00 (1 hora)</p>
                                 <div class="card__buttons">
-                                    <button class="card__button button-orange">Ligar por vídeo</button>
-                                    <button class="card__button button-transparent">Ligar por áudio</button>
+                                    <button class="card__button button-video-call">Ligar por vídeo</button>
+                                    <button class="card__button button-voice-call">Ligar por áudio</button>
                                 </div>
                             </div>
                         </div>
                     </li>
+
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-3.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Larissa Santana</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/pin.svg" alt="Ícone de alfinete">
+                                        <p>Consulta no local</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">16:00 - 17:00 (1 hora)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-address">Ver endereço</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-4.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Marcos Correia</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/camera.svg" alt="Ícone câmera">
+                                        <p>Consulta remota</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">17:20 - 18:00 (40 minutos)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-video-call">Ligar por vídeo</button>
+                                    <button class="card__button button-voice-call">Ligar por áudio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h2 class="appointments__by-date__title">Amanhã</h2>
+                <ul>
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-5.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Clara Lemos</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/pin.svg" alt="Ícone de alfinete">
+                                        <p>Consulta no local</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">18:00 - 19:00 (1 hora)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-address">Ver endereço</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                     <li>
                         <div class="appointments__card">
                             <div class="card__title">
@@ -67,12 +142,87 @@
                             <div class="card__description">
                                 <p class="card__appointment-hour">14:00 - 15:00 (1 hora)</p>
                                 <div class="card__buttons">
-                                    <button class="card__button button-orange">Ligar por vídeo</button>
-                                    <button class="card__button button-transparent">Ligar por áudio</button>
+                                    <button class="card__button button-video-call">Ligar por vídeo</button>
+                                    <button class="card__button button-voice-call">Ligar por áudio</button>
                                 </div>
                             </div>
                         </div>
                     </li>
+
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-4.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Marcos Correia</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/camera.svg" alt="Ícone câmera">
+                                        <p>Consulta remota</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">17:20 - 18:00 (40 minutos)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-video-call">Ligar por vídeo</button>
+                                    <button class="card__button button-voice-call">Ligar por áudio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-3.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Larissa Santana</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/pin.svg" alt="Ícone de alfinete">
+                                        <p>Consulta no local</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">16:00 - 17:00 (1 hora)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-address">Ver endereço</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <h2 class="appointments__by-date__title">Quarta-feira</h2>
+                <ul>
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-5.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Clara Lemos</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/pin.svg" alt="Ícone de alfinete">
+                                        <p>Consulta no local</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">18:00 - 19:00 (1 hora)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-address">Ver endereço</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                     <li>
                         <div class="appointments__card">
                             <div class="card__title">
@@ -90,12 +240,60 @@
                             <div class="card__description">
                                 <p class="card__appointment-hour">14:00 - 15:00 (1 hora)</p>
                                 <div class="card__buttons">
-                                    <button class="card__button button-orange">Ligar por vídeo</button>
-                                    <button class="card__button button-transparent">Ligar por áudio</button>
+                                    <button class="card__button button-video-call">Ligar por vídeo</button>
+                                    <button class="card__button button-voice-call">Ligar por áudio</button>
                                 </div>
                             </div>
                         </div>
                     </li>
+
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-4.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Marcos Correia</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/camera.svg" alt="Ícone câmera">
+                                        <p>Consulta remota</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">17:20 - 18:00 (40 minutos)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-video-call">Ligar por vídeo</button>
+                                    <button class="card__button button-voice-call">Ligar por áudio</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-3.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Larissa Santana</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/pin.svg" alt="Ícone de alfinete">
+                                        <p>Consulta no local</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">16:00 - 17:00 (1 hora)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-address">Ver endereço</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
             <div class="appointments__by-date"></div>

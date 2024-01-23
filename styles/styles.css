@@ -21,7 +21,7 @@ body {
 
 .user-profile {
     display: flex;
-    padding: 2em 1em 1.4em 1em;
+    padding: 2em 1em 1.9em 1em;
     align-items: center;
     gap: 1em;
 }

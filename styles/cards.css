@@ -1,7 +1,17 @@
+.appointments__by-date__title {
+    color: var(--color-text-main);
+    font-weight: 700;
+    margin-left: 1em;
+}
+
 .appointments__card {
     background-color: var(--color-card-background);
     border-radius: 8px;
     margin: 1em;
+}
+
+.appointments__card:first-child {
+    margin-top: 0.5em;
 }
 
 .card__title {
@@ -84,14 +94,20 @@
     width: -webkit-fill-available;
 }
 
-.button-orange {
+.button-video-call {
     background-color: var(--color-video-call-button);
     border: 1px solid var(--color-video-call-button);
     color: var(--color-card-background);
 }
 
-.button-transparent {
+.button-voice-call {
     background-color: transparent;
     border: 1px solid var(--color-audio-call-button);
     color: var(--color-text-main);
+}
+
+.button-address {
+    background-color: var(--color-adress-buton);
+    border: 1px solid var(--color-adress-buton);
+    color: var(--color-card-background);
 }
