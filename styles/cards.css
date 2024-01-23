@@ -1,0 +1,97 @@
+.appointments__card {
+    background-color: var(--color-card-background);
+    border-radius: 8px;
+    margin: 1em;
+}
+
+.card__title {
+    display: flex;
+    padding: 1em;
+    padding-bottom: 0;
+    align-items: center;
+    line-height: 100%;
+}
+
+.card__profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 1em;
+}
+
+.card__title h3 {
+    color: var(--color-text-main);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.card__title button {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+    padding: 0;
+}
+
+.card__title button img {
+    width: 2em;
+}
+
+.card__appointment-local {
+    display: flex;
+    align-items: center;
+}
+
+.card__appointment-local img {
+    width: 16px;
+    height: 16px;
+}
+
+.card__appointment-local p {
+    color: var(--color-text-secondary);
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-top: 0.2em;
+    margin-left: 0.5em;
+}
+
+.appointments__card hr {
+    background-color: var(--color-text-main);
+    opacity: 0.1;
+    margin: 0.75em 0;
+}
+
+.card__description {
+    padding: 1em;
+    padding-top: 0;
+}
+
+.card__appointment-hour {
+    color: var(--color-text-main);
+    font-size: 0.75rem;
+    line-height: 160%;
+    margin-bottom: 0.5em;
+}
+
+.card__buttons {
+    display: flex;
+    gap: 1.125em;
+}
+
+.card__button {
+    padding: 0.8em 1em;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    width: -webkit-fill-available;
+}
+
+.button-orange {
+    background-color: var(--color-video-call-button);
+    border: 1px solid var(--color-video-call-button);
+    color: var(--color-card-background);
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: 1px solid var(--color-audio-call-button);
+    color: var(--color-text-main);
+}
