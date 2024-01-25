@@ -1,9 +1,11 @@
 @import url(reset.css);
 @import url(cards.css);
+@import url(footer.css);
 
 :root {
     --color-text-main: #464646;
     --color-text-secondary: #A3A3A3;
+    --color-text-menu: #c7c7c7;
     --color-card-background: #ffffff;
     --color-adress-buton: #4894ff;
     --color-audio-call-button: #ECECEC;

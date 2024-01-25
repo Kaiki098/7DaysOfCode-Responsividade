@@ -1,0 +1,49 @@
+.footer-navigation {
+    position: fixed;
+    bottom: 0;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    border-radius: 12px 12px 0px 0px;
+    background: var(--color-card-background);
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
+}
+
+.footer-navigation__item {
+    text-align: center;
+}
+
+.footer-navigation__item p {
+    color: var(--color-text-menu);
+}
+
+.appointment-button {
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    padding: 20px;
+    background-color: var(--color-adress-buton);
+    border-radius: 100%;
+}
+
+.appointment-button label {
+    height: 16px;
+    width: 16px;
+}
+
+.appointment-button input {
+    display: none;
+}
+
+.new-appointments-container {
+    /* display: none; */
+    position: fixed;
+    bottom: 150px;
+    right: 0;
+}
+
+.appointment-button input:checked ~ .new-appointment-container{
+    display: block;
+}
+
