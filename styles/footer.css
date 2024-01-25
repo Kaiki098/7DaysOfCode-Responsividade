@@ -20,30 +20,57 @@
 
 .appointment-button {
     position: fixed;
-    bottom: 70px;
+    bottom: 82px;
     right: 0;
     padding: 20px;
     background-color: var(--color-adress-buton);
+    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.50));
     border-radius: 100%;
+    z-index: 3;
 }
 
 .appointment-button label {
-    height: 16px;
-    width: 16px;
+    display: flex;
 }
 
 .appointment-button input {
+    display: block;
+}
+
+body::before {
     display: none;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 2; 
 }
 
 .new-appointments-container {
-    /* display: none; */
+    display: none;
     position: fixed;
     bottom: 150px;
     right: 0;
+    z-index: 3;
 }
 
-.appointment-button input:checked ~ .new-appointment-container{
+.appointment-button input:checked ~ .new-appointments-container {
     display: block;
+}
+
+.appointment-button input:checked ~ body::before {
+    display: block;
+}
+
+.new-appointment-container__option {
+    display: flex;
+}
+
+.new-appointment-container__option p {
+    background-color: var(--color-card-background);
+    padding: 1px;
 }
 
