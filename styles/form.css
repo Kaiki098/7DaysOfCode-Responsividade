@@ -1,0 +1,9 @@
+.add-appointment-section {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.new-appointment-form {
+    display: none;
+    flex-direction: column;
+}

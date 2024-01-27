@@ -52,4 +52,8 @@
     .menu-new-appointment button, .card__title button, .card__button {
         cursor: pointer;
     }
+
+    .new-appointment-form {
+        display: flex;
+    }
 }

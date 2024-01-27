@@ -349,6 +349,37 @@
                 </ul>
             </div>
         </section>
+
+        <section class="add-appointment-section">
+            <!-- Campo de texto para o nome do paciente
+                Campo de seleção de tipo de consulta
+                Campo para informar a data da consulta
+                Campo para informar o horário da consulta
+                Campo para informar observações
+                Botão para salvar a nova consulta -->
+            <form class="new-appointment-form">
+                <div>
+                    <input type="text" class="new-appointment-form__text-camp">
+                </div>
+
+                <label>
+                    <span>Tipo de consulta</span>
+                    <select>
+                        <option>Remoto</option>
+                        <option>Local</option>
+                    </select>
+                </label>
+                <div>
+                    <input type="date">
+                    <input type="datetime">    
+                </div>
+                <div>
+                    <input type="text" class="new-appointment-form__text-camp">
+                </div>
+                <button class="new-appointment-form__button" type="submit"></button>
+            </form>
+
+        </section>
     </main>
 
 
