@@ -1,13 +1,14 @@
-footer {
+.menu {
     position: fixed;
     bottom: 0;
     z-index: 2;
 }
 
-.footer-navigation {
+.menu-navigation {
     padding: 0.5em;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 2em;
     align-items: baseline;
     width: calc(100vw - 1em);
     border-radius: 12px 12px 0px 0px;
@@ -15,19 +16,19 @@ footer {
     box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
 }
 
-.footer-navigation__item {
+.menu-navigation__item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer-navigation__item p {
+.menu-navigation__item p {
     color: var(--color-text-menu);
     font-size: 0.75rem;
     font-weight: 400;
 }
 
-.footer-navigation__item .item__selected {
+.menu-navigation__item .item__selected {
     color: var(--color-adress-buton);
 }
 
@@ -57,20 +58,7 @@ footer {
     display: flex;
     align-items: center;
     gap: 1em;
-    /* transition: all 0.5s ease-in-out; */ /*Essas propriedades só fazem sentido no desktop*/
 }
-
-/* .menu-new-appointment__option:hover {
-    transform: translateY(-5px) scale(1.05);
-}
-
-.menu-new-appointment button:first-child {
-    transition: all 0.5s ease-in-out;
-}
-
-.menu-new-appointment button:first-child:hover {
-    transform: translateY(-5px) scale(1.05);
-} */
 
 .menu-new-appointment__option p {
     font-size: 0.75rem;
@@ -83,3 +71,4 @@ footer {
 .hidden {
     display: none;
 }
+

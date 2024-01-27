@@ -28,7 +28,7 @@
         <section class="appointments">
             <div class="appointments__by-date">
                 <h2 class="appointments__by-date__title">Hoje</h2>
-                <ul>
+                <ul class="appointments__by-date__list">
                     <li>
                         <div class="appointments__card">
                             <div class="card__title">
@@ -102,8 +102,11 @@
 
                 </ul>
 
+            </div>
+
+            <div class="appointments__by-date">
                 <h2 class="appointments__by-date__title">Amanhã</h2>
-                <ul>
+                <ul class="appointments__by-date__list">
                     <li>
                         <div class="appointments__card">
                             <div class="card__title">
@@ -198,10 +201,34 @@
                         </div>
                     </li>
 
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-5.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Clara Lemos</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/pin.svg" alt="Ícone de alfinete">
+                                        <p>Consulta no local</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">18:00 - 19:00 (1 hora)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-address">Ver endereço</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
+            </div>
 
+            <div class="appointments__by-date">
                 <h2 class="appointments__by-date__title">Quarta-feira</h2>
-                <ul>
+                <ul class="appointments__by-date__list">
                     <li>
                         <div class="appointments__card">
                             <div class="card__title">
@@ -289,6 +316,29 @@
                             <hr>
                             <div class="card__description">
                                 <p class="card__appointment-hour">16:00 - 17:00 (1 hora)</p>
+                                <div class="card__buttons">
+                                    <button class="card__button button-address">Ver endereço</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="appointments__card">
+                            <div class="card__title">
+                                <img class="card__profile" src="./img/perfil-5.svg" alt="Perfil do profissional">
+                                <div>
+                                    <h3>Clara Lemos</h3>
+                                    <div class="card__appointment-local">
+                                        <img src="./img/pin.svg" alt="Ícone de alfinete">
+                                        <p>Consulta no local</p>
+                                    </div>
+                                </div>
+                                <button><img src="./img/chat.svg" alt="Ícone mensagem"></button>
+                            </div>
+                            <hr>
+                            <div class="card__description">
+                                <p class="card__appointment-hour">18:00 - 19:00 (1 hora)</p>
                                 <div class="card__buttons">
                                     <button class="card__button button-address">Ver endereço</button>
                                 </div>
@@ -298,14 +348,11 @@
 
                 </ul>
             </div>
-            <div class="appointments__by-date"></div>
-            <div class="appointments__by-date"></div>
         </section>
     </main>
 
 
-    <footer>
-
+    <div class="menu">
         <div class="menu-new-appointment">
             <button id="new-appointment">
                 <img src="./img/maisicone.svg" alt="Botão flutuante para uma nova consulta">
@@ -326,29 +373,31 @@
             </div>
         </div>
 
-        <nav class="footer-navigation">
-            <div class="footer-navigation__item">
+        <nav class="menu-navigation">
+            <div class="menu-navigation__item">
                 <img src="./img/calendarioicone.png" alt="Ícone de calendário">
                 <p class="item__selected">Consultas</p>
             </div>
 
-            <div class="footer-navigation__item">
+            <div class="menu-navigation__item">
                 <img src="./img/clientesicone.svg" alt="Ícone de clientes">
                 <p>Clientes</p>
             </div>
 
-            <div class="footer-navigation__item">
+            <div class="menu-navigation__item">
                 <img src="./img/relatoriosicone.svg" alt="Ícone de relatorio">
                 <p>Relatórios</p>
             </div>
 
-            <div class="footer-navigation__item">
+            <div class="menu-navigation__item">
                 <img src="./img/menuicone.svg" alt="Ícone de menu">
                 <p>Menu</p>
             </div>
         </nav>
 
-    </footer>
+
+    </div>
+
 </body>
 
 </html>

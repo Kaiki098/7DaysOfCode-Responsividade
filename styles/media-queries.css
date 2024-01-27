@@ -1,0 +1,54 @@
+
+@media screen and (min-width: 1024px) {
+    .user-profile {
+        margin-left: 156px;
+    }
+    
+    .appointments {
+        margin-left: 80px;
+    }
+    
+    .menu {
+        top: 0;
+        left: 0;
+    }
+
+    .menu-navigation {
+        flex-direction: column;
+        width: fit-content;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 0 12px 12px 0px;
+        height: calc(100vh - 16px);
+        padding-top: 1em; 
+    }
+
+    .menu-new-appointment {
+        position: fixed;
+        left: 76px;
+        top: 15px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-new-appointment__option {
+        flex-direction: row-reverse;
+    }
+
+    .menu-new-appointment__option {
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu-new-appointment__option:hover {
+        transform: translateY(-5px) scale(1.05);
+    }
+    
+    .menu-new-appointment button:first-child {
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .menu-new-appointment button:first-child:hover {
+        transform: translateY(-5px) scale(1.05);
+    }
+    
+}
