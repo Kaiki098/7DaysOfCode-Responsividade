@@ -16,20 +16,14 @@
     box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
 }
 
-.menu-navigation__item {
+.menu-navigation__item a {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.menu-navigation__item p {
+    text-decoration: none;
     color: var(--color-text-menu);
     font-size: 0.75rem;
     font-weight: 400;
-}
-
-.menu-navigation__item .item__selected {
-    color: var(--color-adress-buton);
 }
 
 .menu-new-appointment {

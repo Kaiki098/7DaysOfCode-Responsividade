@@ -1,7 +1,21 @@
+@media screen and (min-width: 720px) {
+    .appointments {
+        align-items: flex-start;
+    }
+
+    .appointments__by-date__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .appointments__card {
+        min-width: 20.5em;
+    }
+}
 
 @media screen and (min-width: 1024px) {
     .user-profile {
-        margin-left: 156px;
+        margin-left: 80px;
     }
     
     .appointments {
@@ -23,32 +37,19 @@
         padding-top: 1em; 
     }
 
+    .menu-navigation__item {
+        cursor: pointer;
+    }
+
+    .menu-navigation__item a:active {
+        color: var(--color-adress-buton);
+    }
+
     .menu-new-appointment {
-        position: fixed;
-        left: 76px;
-        top: 15px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .menu-new-appointment__option {
-        flex-direction: row-reverse;
-    }
-
-    .menu-new-appointment__option {
-        transition: all 0.5s ease-in-out;
+        display: none;
     }
     
-    .menu-new-appointment__option:hover {
-        transform: translateY(-5px) scale(1.05);
+    .menu-new-appointment button, .card__title button, .card__button {
+        cursor: pointer;
     }
-    
-    .menu-new-appointment button:first-child {
-        transition: all 0.5s ease-in-out;
-    }
-    
-    .menu-new-appointment button:first-child:hover {
-        transform: translateY(-5px) scale(1.05);
-    }
-    
 }

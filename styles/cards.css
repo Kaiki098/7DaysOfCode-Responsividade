@@ -124,17 +124,3 @@
     color: var(--color-card-background);
 }
 
-@media screen and (min-width: 720px) {
-    .appointments {
-        align-items: flex-start;
-    }
-
-    .appointments__by-date__list {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .appointments__card {
-        min-width: 20.5em;
-    }
-}
