@@ -13,7 +13,7 @@ darkLayer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 newAppointmentButton.addEventListener('click', () => {
     newAppointmentOptions.forEach(element => {
         element.classList.toggle('hidden');
-        element.classList.toggle('animate-button');
+        element.classList.add('animate-button');
     });
 
     const existingDarkLayer = document.body.contains(darkLayer);
@@ -24,3 +24,12 @@ newAppointmentButton.addEventListener('click', () => {
         document.body.appendChild(darkLayer);
     }
 });
+
+darkLayer.addEventListener('click', () => {
+    newAppointmentOptions.forEach(element => {
+        element.classList.toggle('hidden');
+        element.classList.remove('animate-button');
+    });
+
+    document.body.removeChild(darkLayer);
+})
