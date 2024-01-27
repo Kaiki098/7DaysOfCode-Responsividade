@@ -304,10 +304,31 @@
 
 
     <footer>
+
+        <div class="menu-new-appointment">
+            <button id="new-appointment">
+                <img src="./img/maisicone.svg" alt="Botão flutuante para uma nova consulta">
+            </button>
+
+            <div class="menu-new-appointment__option hidden">
+                <p>Nova consulta na casa do paciente</p>
+                <button>
+                    <img src="./img/camerafab.svg">
+                </button>
+            </div>
+
+            <div class="menu-new-appointment__option hidden">
+                <p>Nova consulta por vídeo</p>
+                <button>
+                    <img src="./img/pinfabiconee.svg">
+                </button>
+            </div>
+        </div>
+
         <nav class="footer-navigation">
             <div class="footer-navigation__item">
                 <img src="./img/calendarioicone.png" alt="Ícone de calendário">
-                <p>Consultas</p>
+                <p class="item__selected">Consultas</p>
             </div>
 
             <div class="footer-navigation__item">
@@ -325,29 +346,6 @@
                 <p>Menu</p>
             </div>
         </nav>
-
-        <div class="appointment-button">
-            <input type="checkbox" id="new-appointment">
-            <label for="new-appointment">
-                <img src="./img/maisicone.svg" alt="Botão flutuante para uma nova consulta">
-            </label>
-        </div>
-
-        <div class="new-appointments-container">
-            <div class="new-appointments-contaner__option">
-                <p>Nova consulta na casa do paciente</p>
-                <div class="new-appointments-contaner__option__button">
-                    <img src="./img/pinfab.svg" alt="">
-                </div>
-            </div>
-
-            <div class="new-appointments-contaner__option">
-                <p>Nova consulta por vídeo</p>
-                <div class="new-appointments-container__option__button">
-                    <img src="./img/camerafab.svg" alt="">
-                </div>
-            </div>
-        </div>
 
     </footer>
 </body>

@@ -1,76 +1,62 @@
-.footer-navigation {
+footer {
     position: fixed;
     bottom: 0;
+    z-index: 3;
+}
+
+.hidden {
+    display: block;
+}
+
+.footer-navigation {
     padding: 0.5em;
     display: flex;
-    justify-content: space-around;
-    width: 100vw;
+    justify-content: space-between;
+    align-items: baseline;
+    width: calc(100vw - 1em);
     border-radius: 12px 12px 0px 0px;
     background: var(--color-card-background);
     box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.06);
 }
 
 .footer-navigation__item {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer-navigation__item p {
     color: var(--color-text-menu);
+    font-size: 0.75rem;
+    font-weight: 400;
 }
 
-.appointment-button {
-    position: fixed;
-    bottom: 82px;
-    right: 0;
-    padding: 20px;
+.footer-navigation__item .item__selected {
+    color: var(--color-adress-buton);
+}
+
+.menu-new-appointment {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 1em;
+    margin: 1em;
+}
+
+.menu-new-appointment button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
     background-color: var(--color-adress-buton);
-    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.50));
     border-radius: 100%;
-    z-index: 3;
+    border: none;
+    filter: drop-shadow(0px 4px 16px rgba(72, 148, 255, 0.50));
+    width: 56px;
+    height: 56px;
 }
 
-.appointment-button label {
+
+.menu-new-appointment__option {
     display: flex;
 }
-
-.appointment-button input {
-    display: block;
-}
-
-body::before {
-    display: none;
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
-    z-index: 2; 
-}
-
-.new-appointments-container {
-    display: none;
-    position: fixed;
-    bottom: 150px;
-    right: 0;
-    z-index: 3;
-}
-
-.appointment-button input:checked ~ .new-appointments-container {
-    display: block;
-}
-
-.appointment-button input:checked ~ body::before {
-    display: block;
-}
-
-.new-appointment-container__option {
-    display: flex;
-}
-
-.new-appointment-container__option p {
-    background-color: var(--color-card-background);
-    padding: 1px;
-}
-
