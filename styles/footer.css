@@ -1,11 +1,7 @@
 footer {
     position: fixed;
     bottom: 0;
-    z-index: 3;
-}
-
-.hidden {
-    display: block;
+    z-index: 2;
 }
 
 .footer-navigation {
@@ -59,4 +55,18 @@ footer {
 
 .menu-new-appointment__option {
     display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.menu-new-appointment__option p {
+    font-size: 0.75rem;
+    color: var(--color-text-main);
+    padding: 2px 8px;
+    border-radius: 2323px;
+    background-color: var(--color-card-background);
+}
+
+.hidden {
+    display: none;
 }
