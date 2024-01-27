@@ -13,6 +13,7 @@ darkLayer.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
 newAppointmentButton.addEventListener('click', () => {
     newAppointmentOptions.forEach(element => {
         element.classList.toggle('hidden');
+        element.classList.toggle('animate-button');
     });
 
     const existingDarkLayer = document.body.contains(darkLayer);
