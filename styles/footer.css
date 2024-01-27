@@ -39,6 +39,7 @@ footer {
     margin: 1em;
 }
 
+
 .menu-new-appointment button {
     display: flex;
     justify-content: center;
@@ -52,12 +53,24 @@ footer {
     height: 56px;
 }
 
-
 .menu-new-appointment__option {
     display: flex;
     align-items: center;
     gap: 1em;
+    /* transition: all 0.5s ease-in-out; */ /*Essas propriedades só fazem sentido no desktop*/
 }
+
+/* .menu-new-appointment__option:hover {
+    transform: translateY(-5px) scale(1.05);
+}
+
+.menu-new-appointment button:first-child {
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-new-appointment button:first-child:hover {
+    transform: translateY(-5px) scale(1.05);
+} */
 
 .menu-new-appointment__option p {
     font-size: 0.75rem;
