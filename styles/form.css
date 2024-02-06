@@ -1,9 +1,79 @@
-.add-appointment-section {
-    margin-left: 80px;
-    margin-bottom: 20px;
+.add-appointment {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-right: 2em;
+    width: fit-content;
+    background-color: var(--color-form-background);
+    border-radius: 8px 8px 0 0;
+    transition: 2s transform;
 }
 
-.new-appointment-form {
-    display: none;
+.add-appointment__button {
+    width: 100%;
+    padding: 1em;
+    background-color: var(--color-adress-button);
+    color: var(--color-card-background);
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add-appointment__form {
+    padding: 0 2em 2em 2em;
+}
+
+.add-appointment__guide-paragraph {
+    color: var(--color-text-main);
+    padding: 1em;
+}
+
+.form__group {
+    display: flex;
     flex-direction: column;
+    margin: 0.5em;
+}
+
+.form__group label {
+    color: var(--color-form-label);
+    font-weight: 400;
+}
+
+.form__group input[type="text"],  .form__group input[type="datetime-local"]{
+    border: 1px solid var(--color-audio-call-button);
+    border-radius: 8px;
+    background-color: var(--color-card-background);
+    font-family: var(--main-font);
+    color: var(--color-text-main);
+    padding: 1em;
+}
+
+.form__group input[type="text"]::placeholder, .form__group input[type="datetime-local"]::placeholder, .text-area::placeholder {
+    font-family: var(--main-font);
+    color: var(--color-form-placeholder);   
+    font-weight: 400; 
+}
+
+.text-area {
+    border-radius: 8px;
+    border: 1px solid var(--color-audio-call-button);
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: var(--color-text-main);
+    padding: 1em;
+}
+
+.add-appointment__form__button {
+    padding: 1em;
+    background-color: var(--color-adress-button);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+    color: var(--color-card-background);
+    font-family: var(--main-font);
+    font-weight: 700;
 }

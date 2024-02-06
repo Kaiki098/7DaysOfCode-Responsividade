@@ -53,7 +53,7 @@
         cursor: pointer;
     }
 
-    .new-appointment-form {
-        display: flex;
+    .add-appointment {
+        display: block;
     }
 }

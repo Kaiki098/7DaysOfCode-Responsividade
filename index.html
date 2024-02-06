@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -349,39 +348,54 @@
                 </ul>
             </div>
         </section>
-
-        <section class="add-appointment-section">
-            <!-- Campo de texto para o nome do paciente
-                Campo de seleção de tipo de consulta
-                Campo para informar a data da consulta
-                Campo para informar o horário da consulta
-                Campo para informar observações
-                Botão para salvar a nova consulta -->
-            <form class="new-appointment-form">
-                <div>
-                    <input type="text" class="new-appointment-form__text-camp">
-                </div>
-
-                <label>
-                    <span>Tipo de consulta</span>
-                    <select>
-                        <option>Remoto</option>
-                        <option>Local</option>
-                    </select>
-                </label>
-                <div>
-                    <input type="date">
-                    <input type="datetime">    
-                </div>
-                <div>
-                    <input type="text" class="new-appointment-form__text-camp">
-                </div>
-                <button class="new-appointment-form__button" type="submit"></button>
-            </form>
-
-        </section>
     </main>
 
+    <div class="add-appointment" id="add-appointment-div">
+        <button class="add-appointment__button" id="open-form-button">
+            Adicionar nova consulta
+        </button>
+        <div id="form-container">
+            <p class="add-appointment__guide-paragraph">Preencha os dados</p>
+            <form class="add-appointment__form">
+
+                <fieldset>
+                    <div class="form__group">
+                        <label for="patientFirstName">Nome do paciente</label>
+                        <input type="text" name="patientFirstName" placeholder="Digite o nome" class="add-appointment__form__input-text" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="patientLastName">Sobrenome do paciente</label>
+                        <input type="text" name="patientLastName" placeholder="Digite o sobrenome" class="add-appointment__form__input-text" required>
+                    </div>
+                </fieldset>
+
+                <div class="form__group">
+                    <label>Tipo de consulta</label>
+                    <div>
+                        <input type="radio" name="appointmentType" id="radioLocal" class="form__group__radio-input" checked>
+                        <label for="radioLocal">Local</label>
+
+                        <input type="radio" name="appointmentType" id="radioRemote" class="form__group__radio-input">
+                        <label for="radioRemote">Remoto</label>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label>Data e horário da consulta</label>
+                    <input type="datetime-local" name="appointmentDateAndTime" required>
+                </div>
+
+                <div class="form__group">
+                    <label>Observações</label>
+                    <textarea name="appointmentObservations" placeholder="Digite observações sobre a consulta" cols="30" rows="6" class="text-area"></textarea>
+                </div>
+
+                <button type="submit" class="add-appointment__form__button">Adicionar</button>
+            </form>
+
+        </div>
+
+    </div>
 
     <div class="menu">
         <div class="menu-new-appointment">
@@ -437,7 +451,7 @@
 
 
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

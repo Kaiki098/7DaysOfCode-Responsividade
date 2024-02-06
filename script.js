@@ -1,6 +1,10 @@
 const newAppointmentButton = document.getElementById('new-appointment');
 const newAppointmentOptions = document.querySelectorAll('.menu-new-appointment__option');
 
+const openFormButton = document.getElementById('open-form-button');
+const formContainer = document.getElementById('form-container');
+const addAppointmentDiv = document.getElementById('add-appointment-div');
+
 const darkLayer = document.createElement('div');
 darkLayer.style.position = 'fixed';
 darkLayer.style.top = '0';
@@ -32,4 +36,8 @@ darkLayer.addEventListener('click', () => {
     });
 
     document.body.removeChild(darkLayer);
+})
+
+openFormButton.addEventListener('click', function() {
+    formContainer.style.bottom = '100%';
 })
