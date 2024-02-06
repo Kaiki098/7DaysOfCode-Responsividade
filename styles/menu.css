@@ -26,6 +26,10 @@
     font-weight: 400;
 }
 
+.menu-navigation__item:first-child a:first-child {
+    color: var(--color-adress-button);
+}
+
 .menu-new-appointment {
     display: flex;
     flex-direction: column-reverse;
