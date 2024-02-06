@@ -113,15 +113,41 @@
     color: var(--color-card-background);
 }
 
+.button-video-call:hover {
+    background-color: var(--color-video-call-button-hover);
+}
+
+.button-video-call:active {
+    background-color: var(--color-video-call-button-active);
+}
+
 .button-voice-call {
     background-color: transparent;
     border: 1px solid var(--color-audio-call-button);
     color: var(--color-text-main);
 }
 
+.button-voice-call:hover {
+    background-color: var(--color-adress-button);
+    color: var(--color-card-background);    
+}
+
+.button-voice-call:active {
+    background-color: var(--color-audio-call-button-active);
+    color: var(--color-card-background);
+}
+
 .button-address {
     background-color: var(--color-adress-button);
     border: 1px solid var(--color-adress-button);
     color: var(--color-card-background);
+}
+
+.button-address:hover {
+    background-color: var(--color-adress-button-hover);
+}
+
+.button-address:active {
+    background-color: var(--color-adress-button-active);
 }
 

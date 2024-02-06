@@ -11,8 +11,13 @@
     --color-text-menu: #c7c7c7;
     --color-card-background: #ffffff;
     --color-adress-button: #4894ff;
+    --color-adress-button-hover: #4786F0;
+    --color-adress-button-active: #4373DC;
     --color-audio-call-button: #ECECEC;
+    --color-audio-call-button-active: #4786F0;
     --color-video-call-button: #ffb050;
+    --color-video-call-button-hover: #fda437;
+    --color-video-call-button-active: #f08c12;
     --color-message-button: #f6f6f6;
     --color-form-background: #f3f3f3;
     --color-form-label: #898989;

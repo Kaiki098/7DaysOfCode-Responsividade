@@ -56,6 +56,11 @@
     padding: 1em;
 }
 
+.form__group input[type="text"]:focus,  .form__group input[type="datetime-local"]:focus {
+    outline: 1px;
+    border: 2px solid var(--color-adress-button);
+}
+
 .form__group input[type="text"]::placeholder, .form__group input[type="datetime-local"]::placeholder, .text-area::placeholder {
     font-family: var(--main-font);
     color: var(--color-form-placeholder);   
@@ -71,6 +76,11 @@
     padding: 1em;
 }
 
+.text-area:focus {
+    outline: 1px;
+    border: 2px solid var(--color-adress-button);
+}
+
 .add-appointment__form__button {
     padding: 1em;
     background-color: var(--color-adress-button);
@@ -80,4 +90,12 @@
     color: var(--color-card-background);
     font-family: var(--main-font);
     font-weight: 700;
+}
+
+.add-appointment__form__button:hover, .add-appointment__button:hover {
+    background-color: var(--color-adress-button-hover);
+}
+
+.add-appointment__form__button:active, .add-appointment__button:active {
+    background-color: var(--color-adress-button-active);
 }
