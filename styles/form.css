@@ -2,12 +2,16 @@
     display: none;
     position: fixed;
     right: 0;
+    top: calc(100vh - 52px);
     bottom: 0;
     margin-right: 2em;
     width: fit-content;
-    background-color: var(--color-form-background);
     border-radius: 8px 8px 0 0;
     transition: 2s transform;
+}
+
+#form-container {
+    background-color: var(--color-form-background);
 }
 
 .add-appointment__button {

@@ -2,7 +2,6 @@ const newAppointmentButton = document.getElementById('new-appointment');
 const newAppointmentOptions = document.querySelectorAll('.menu-new-appointment__option');
 
 const openFormButton = document.getElementById('open-form-button');
-const formContainer = document.getElementById('form-container');
 const addAppointmentDiv = document.getElementById('add-appointment-div');
 
 const darkLayer = document.createElement('div');
@@ -39,5 +38,10 @@ darkLayer.addEventListener('click', () => {
 })
 
 openFormButton.addEventListener('click', function() {
-    formContainer.style.bottom = '100%';
+    if (addAppointmentDiv.style.transform === 'translateY(-600px)') {
+        addAppointmentDiv.style.transform = '';
+    }
+    else {
+        addAppointmentDiv.style.transform = 'translateY(-600px)'
+    }
 })
